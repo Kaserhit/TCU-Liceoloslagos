@@ -60,7 +60,7 @@ const Hero = ({
               className="mt-0 mb-16 reveal-from-bottom"
               data-reveal-delay="200"
             >
-              Smart Schools{' '}
+              Smart High School{' '}
               <span className="text-color-primary">Liceo Los Lagos</span>
             </h1>
             <div className="container-xs">
@@ -68,9 +68,9 @@ const Hero = ({
                 className="m-0 mb-32 reveal-from-bottom"
                 data-reveal-delay="400"
               >
-                Los resultados del sitio web buscan facilitar el entorno virtual
-                en el 2021, para de esta forma agilizar los procesos de
-                servicios comunal en la institucion.
+                Un entorno para facilitar la entrega y revision de los
+                resultados de cada uno de los estudiantes en el Programa de
+                Servicio Comunal Estudiantil
               </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
@@ -78,17 +78,9 @@ const Hero = ({
                     tag="a"
                     color="primary"
                     wideMobile
-                    href="https://cruip.com/"
+                    href="https://forms.gle/SaTYEXtnFo8b6qYa6"
                   >
-                    Reportar Avances
-                  </Button>
-                  <Button
-                    tag="a"
-                    color="dark"
-                    wideMobile
-                    href="https://github.com/cruip/open-react-template/"
-                  >
-                    View on Github
+                    Reportar Servicio Comunal Estudiantil
                   </Button>
                 </ButtonGroup>
               </div>
@@ -107,7 +99,7 @@ const Hero = ({
             >
               <Image
                 className="has-shadow"
-                src={require('./../../assets/images/video-placeholder.jpg')}
+                src={require('./../../assets/images/IMG-1.gif')}
                 alt="Hero"
                 width={896}
                 height={504}
