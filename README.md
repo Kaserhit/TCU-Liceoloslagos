@@ -18,6 +18,7 @@ El proyecto busco cumplir todas las solicitudes realizadas por parte del cliente
 
 
 Silabo: https://github.com/Kaserhit/TCU-Liceoloslagos/blob/main/Silabo%20del%20Proyecto.pdf
+
 Repositorio: https://github.com/Kaserhit/TCU-Liceoloslagos
 
 
