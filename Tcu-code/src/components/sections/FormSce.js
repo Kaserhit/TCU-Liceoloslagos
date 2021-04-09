@@ -364,17 +364,21 @@ const ComponentToPrint = () => {
       content: () => componentRef.current,
     });
 
-    // const sendMail = () => {
-    //     const mailto =
-    //       "mailto:karl23aase@gmail.com?subject=Reporte%20de%20SCE%20&body=Datos%20adjuntos%20al%20sistema";
-    //     window.location.href = mailto;
-    //   }
+    const sendMail = () => {
+        const PLATFORM = navigator.platform;
+        const mailtoPhone = "mailto:karl23aase@gmail.com?subject=Reporte%20de%20SCE%20&body=Datos%20adjuntos%20al%20sistema";
+        const mailtoPC = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=karl23aase@gmail.com";
+
+        (PLATFORM.includes("Win") || PLATFORM.includes("Mac")) 
+        ? window.location.href = mailtoPC 
+        : window.location.href = mailtoPhone
+      }
   
     return (
       <div className="buttons_container">
         <FormSce ref={componentRef} />
         <button className="button_send" onClick={handlePrint}>Descargar formulario en PDF</button>
-        <button className="button_attach"><a href="mailto:karl23aase@gmail.com?subject=Reporte%20de%20SCE%20&body=Datos%20adjuntos%20al%20sistema">Enviar Correo </a></button>
+        <button className="button_attach" onClick={sendMail}>Enviar Archivos</button>
       </div>
     );
 };
