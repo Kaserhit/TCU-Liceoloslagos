@@ -366,8 +366,8 @@ const ComponentToPrint = () => {
 
     const sendMail = () => {
         const PLATFORM = navigator.platform;
-        const mailtoPhone = "mailto:karl23aase@gmail.com?subject=Reporte%20de%20SCE%20&body=Datos%20adjuntos%20al%20sistema";
-        const mailtoPC = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=karl23aase@gmail.com";
+        const mailtoPhone = "mailto:karl23aase@gmail.com?subject=Reporte%20de%20Servicio%20Comunal%20Estudiantil&body=Correo%20generado%20autom%C3%A1ticamente%20por%20la%20plataforma%20digital%20del%20Servicio%20Comunal%20Estudiantil%20del%20Liceo%20los%20Lagos";
+        const mailtoPC = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=karl23aase@gmail.com&su=Reporte%20de%20Servicio%20Comunal%20Estudiantil&body=Correo%20generado%20autom%C3%A1ticamente%20por%20la%20plataforma%20digital%20del%20Servicio%20Comunal%20Estudiantil%20del%20Liceo%20los%20Lagos";
 
         (PLATFORM.includes("Win") || PLATFORM.includes("Mac")) 
         ? window.location.href = mailtoPC 
