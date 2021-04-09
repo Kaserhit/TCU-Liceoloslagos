@@ -1,0 +1,307 @@
+.background {
+    background-color: white;
+}
+
+.main__container {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    height: auto;
+}
+
+.title, .subtitle {
+    color: black !important;
+}
+
+.main__container--header {
+    display: flex;
+    justify-content: center;
+    .logo__MEP {
+        margin: 30px 30px 0 0;
+    }
+    .logo__SCE {
+        margin: 30px 0 0 30px;
+    }
+    .MEP{
+        padding-top: 20px;
+        line-height: 32px;
+        font-size: 20px;
+        margin-top: -1px;
+        text-align: center;
+        font-family: Georgia;
+    }
+    .MEP__subtitle{
+        font-size: 15px;
+        margin-top: -25px;
+        text-align: center;
+        font-family: Georgia;
+    }
+    .MEP__subtitle--slogan{
+        font-size: 12px;
+        margin-top: -50px;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Times New Roman';
+    }
+}
+
+.main__container--section {
+    width: 50%;
+    margin: 0 auto;
+    .form__title {
+        font-family: Arial;
+        line-height: 20px;
+        font-size: 19px;
+        text-align: center;
+        text-decoration: underline;
+        margin: 0 0 15px 0;
+        
+    }
+    .section__A {
+        .section__A--title, .section__A--name{
+            font-family: Arial;
+            margin: 0;
+            font-weight: normal;
+            font-size: 15px;
+            color: black;
+            .section__A--nameSpan{
+                font-weight: bold;
+            }
+        }
+        .section__A--information{
+            margin-top: 15px;
+            font-size: 15px;
+            .section__A--phone, .section__A--fax, .section__A--email {
+                font-family: Arial;
+                font-weight: normal;
+                font-size: 15px;
+                color: black;
+            }
+            .section__A--phoneSpan, .section__A--faxSpan, .section__A--emailSpan {
+                font-weight: bold;
+            }
+        }
+        .section__A--informationB{
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 15px;
+            .section__A--direction {
+                margin-right: 50px;
+            }
+            .section__A--direction, .section__A--circuit {
+                font-family: Arial;
+                font-weight: normal;
+                font-size: 15px;
+                color: black;
+            }
+            .section__A--directionSpan, .section__A--circuitSpan {
+                font-weight: bold;
+            }
+        }
+    }
+    .section__B {
+        .section__B--title {
+            font-family: Arial;
+            margin: 0;
+            font-weight: normal;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .section__B--information{
+            .section__B--projectName{
+                display: flex;
+                font-family: Arial;
+                margin: 0;
+                font-size: 15px;
+                color: black;
+                font-weight: normal;
+                p {
+                    margin-right: 10px;
+                }
+                .project_name {
+                    height: 30px;
+                    border: none;
+                    width: 600px;
+                    border-bottom: 2px solid black;
+                }
+            }
+            .section__B--location{
+                @extend .section__B--projectName;
+                p {
+                    margin-right: 10px;
+                }
+                .location {
+                    @extend .project_name;
+                }
+            }
+            .section__B--population{
+                @extend .section__B--projectName;
+                p {
+                    margin-right: 10px;
+                }
+                .population {
+                    @extend .project_name;
+                }
+            }
+            .section__B--projectDescription{
+                font-family: Arial;
+                margin: 0;
+                font-size: 15px;
+                color: black;
+                font-weight: normal;
+                .projectDescription {
+                    border: 1px solid black;
+                }
+            }
+
+            .section__B--projectType{
+                font-family: Arial;
+                margin: 0;
+                font-size: 15px;
+                color: black;
+                font-weight: normal;
+                .projectType__options {
+                    display: flex;
+                    .projectType__options--institucional{
+                        display: flex;
+                        height: 33px;
+                        border: 1px solid black;
+                        .institucional {
+                            border: none;
+                            width: 52px;
+                            background: rgba(128, 128, 128, 0.25);
+                            color: black;
+                            opacity: 0.5;
+                            height: 30px;
+                        }
+                    }
+                    .projectType__options--individual{
+                        @extend .projectType__options--institucional;
+                        .individual {
+                            @extend .institucional;
+                        }
+                    }
+                    .projectType__options--grupal{
+                        @extend .projectType__options--institucional;
+                        .grupal {
+                            @extend .institucional;
+                        }
+                    }
+                }
+            }
+
+            .section__B--justification{
+                @extend .section__B--projectDescription;
+                margin-top: 20px;
+                .justification {
+                    @extend .projectDescription;
+                }
+            }
+
+            .section__B--generalGoal{
+                @extend .section__B--projectDescription;
+                margin-top: 20px;
+                .generalGoal {
+                    @extend .projectDescription;
+                }
+            }
+
+            .section__B--specificGoal{
+                @extend .section__B--projectDescription;
+                margin-top: 20px;
+                .specificGoal {
+                    @extend .projectDescription;
+                }
+            }
+
+            .section__B--goals{
+                @extend .section__B--projectDescription;
+                margin-top: 20px;
+                .goals {
+                    @extend .projectDescription;
+                }
+            }
+
+            .section__B--activities{
+                @extend .section__B--projectDescription;
+                margin-top: 20px;
+            }
+
+            .section__B--activitiesB{
+                @extend .section__B--projectDescription;
+                margin-top: 20px;
+            }
+
+            .section__B--resources{
+                @extend .section__B--projectDescription;
+                margin-top: 20px;
+                .resources {
+                    @extend .projectDescription;
+                }
+            }
+
+        }
+    }
+    .section__C{
+        h3{
+            font-family: Georgia;
+            font-size: 25px;
+            text-align: center;
+            margin: 15px 0 15px 0;
+            color: black;
+        }
+    }
+    
+}
+
+.footer {
+    .footer__information{
+        font-family: Arial;
+        line-height: 30px;
+        font-size: 19px;
+        text-align: center;
+        color: black;
+    }
+    .footer__emails{
+        @extend .footer__information;
+        font-weight: bold;
+        .email{
+            color: blue;
+            font-weight: normal;
+            text-decoration: underline;
+        }
+    }
+    .direction{
+        @extend .footer__information;
+    }
+    .phrase{
+        font-family: 'Arial Narrow Bold', Arial;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        color: black;
+        padding-bottom: 50px;
+    }
+}
+
+.buttons_container{
+        margin: 0px;
+        background-color: #6163FF;
+}
+
+.button_send, .button_attach {
+    border: none;
+    background-color: #6163FF;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    height: 50px;
+    padding-bottom: 50px;
+    outline: inherit;
+}
+
+.button_send:hover, .button_attach:hover {
+    transition: 300ms all;
+    font-weight: bold;
+}

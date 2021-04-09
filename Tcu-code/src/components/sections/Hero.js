@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
@@ -74,14 +75,15 @@ const Hero = ({
               </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button
-                    tag="a"
-                    color="primary"
-                    wideMobile
-                    href="https://forms.gle/SaTYEXtnFo8b6qYa6"
-                  >
-                    Reportar Servicio Comunal Estudiantil
-                  </Button>
+                  <Link to="/Formulario" target="_blank" >
+                    <Button
+                      tag="a"
+                      color="primary"
+                      wideMobile
+                    >
+                      Reportar Servicio Comunal Estudiantil
+                      </Button>
+                  </Link>
                 </ButtonGroup>
               </div>
             </div>
@@ -92,7 +94,7 @@ const Hero = ({
             data-reveal-delay="800"
           >
             <a
-              data-video="https://player.vimeo.com/video/174002812"
+              data-video="https://www.youtube.com/embed/xfgrViUtigc"
               href="#0"
               aria-controls="video-modal"
               onClick={openModal}
@@ -110,7 +112,7 @@ const Hero = ({
             id="video-modal"
             show={videoModalActive}
             handleClose={closeModal}
-            video="https://player.vimeo.com/video/174002812"
+            video="https://www.youtube.com/embed/xfgrViUtigc"
             videoTag="iframe"
           />
         </div>
