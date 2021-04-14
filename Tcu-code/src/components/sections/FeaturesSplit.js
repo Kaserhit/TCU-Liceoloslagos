@@ -70,10 +70,13 @@ const FeaturesSplit = ({
                 </div>
                 <h3 className="mt-0 mb-12">Ingresar al formulario</h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  — Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Primeramente, para ingresar a la aplicación debe ingresar al
+                  sitio web{' '}
+                  <a href="https://sce-lagos.web.app ">
+                    https://sce-lagos.web.app{' '}
+                  </a>
+                  , este es accesible tanto en computadoras (Recomendado) como
+                  en dispositivos móviles.
                 </p>
               </div>
               <div
@@ -84,7 +87,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require('./../../assets/images/features-split-image-01.png')}
+                  src={require('./../../assets/images/Ingresar.gif')}
                   alt="Features split 01"
                   width={528}
                   height={396}
@@ -104,10 +107,10 @@ const FeaturesSplit = ({
                   Completar la información del formulario
                 </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  — Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Posteriormente en la sección de “Reportar Servicio Comunal
+                  Estudiantil” se le trasladara al un formulario el cual incluye
+                  todos los aspectos necesarios para formalizar su proceso de
+                  SCE
                 </p>
               </div>
               <div
@@ -118,7 +121,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require('./../../assets/images/explain.gif')}
+                  src={require('./../../assets/images/Rellenar.gif')}
                   alt="Features split 02"
                   width={528}
                   height={396}
@@ -134,12 +137,11 @@ const FeaturesSplit = ({
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Paso 3
                 </div>
-                <h3 className="mt-0 mb-12">Enviar el formulario</h3>
+                <h3 className="mt-0 mb-12">Guardar el formulario</h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  — Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Una vez finalizada la redacción de todos los aspectos del
+                  formulario puede guardar en su dispositivo o computadora el
+                  formulario para ser enviado.
                 </p>
               </div>
               <div
@@ -150,8 +152,43 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require('./../../assets/images/send.gif')}
+                  src={require('./../../assets/images/Guardar.gif')}
                   alt="Features split 03"
+                  width={528}
+                  height={396}
+                />
+              </div>
+            </div>
+
+            <div className="split-item">
+              <div
+                className="split-item-content center-content-mobile reveal-from-right"
+                data-reveal-container=".split-item"
+              >
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                  Paso 4
+                </div>
+                <h3 className="mt-0 mb-12">
+                  Enviar la información necesaria del SCE y formulario guardado
+                </h3>
+                <p className="m-0">
+                  Finalmente, en la sección de “Enviar Archivos”, se le
+                  redireccionará a su correo de preferencia de su dispositivo en
+                  el cual podrá agregar el formulario generado y cualquier otro
+                  archivo o imagen necesaria, siendo enviado al encargado de
+                  SCE.
+                </p>
+              </div>
+              <div
+                className={classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item"
+              >
+                <Image
+                  src={require('./../../assets/images/Enviar.gif')}
+                  alt="Features split 02"
                   width={528}
                   height={396}
                 />

@@ -5,10 +5,10 @@ import Image from '../elements/Image';
 import "../../assets/scss/FormSce.scss"
 
 class FormSce extends React.PureComponent {
-
     render() {
         return (
             <div className="background">
+                <meta name="viewport" content="width=1024"></meta>
                 <div className="main__container">
                     <header>
                         <div className="main__container--header">
@@ -366,8 +366,8 @@ const ComponentToPrint = () => {
 
     const sendMail = () => {
         const PLATFORM = navigator.platform;
-        const mailtoPhone = "mailto:karl23aase@gmail.com?subject=Reporte%20de%20Servicio%20Comunal%20Estudiantil&body=Correo%20generado%20autom%C3%A1ticamente%20por%20la%20plataforma%20digital%20del%20Servicio%20Comunal%20Estudiantil%20del%20Liceo%20los%20Lagos";
-        const mailtoPC = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=karl23aase@gmail.com&su=Reporte%20de%20Servicio%20Comunal%20Estudiantil&body=Correo%20generado%20autom%C3%A1ticamente%20por%20la%20plataforma%20digital%20del%20Servicio%20Comunal%20Estudiantil%20del%20Liceo%20los%20Lagos";
+        const mailtoPhone = "mailto:lic.loslagos@mep.go.cr?subject=Reporte%20de%20Servicio%20Comunal%20Estudiantil&body=Correo%20generado%20autom%C3%A1ticamente%20por%20la%20plataforma%20digital%20del%20Servicio%20Comunal%20Estudiantil%20del%20Liceo%20los%20Lagos";
+        const mailtoPC = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=lic.loslagos@mep.go.cr&su=Reporte%20de%20Servicio%20Comunal%20Estudiantil&body=Correo%20generado%20autom%C3%A1ticamente%20por%20la%20plataforma%20digital%20del%20Servicio%20Comunal%20Estudiantil%20del%20Liceo%20los%20Lagos";
 
         (PLATFORM.includes("Win") || PLATFORM.includes("Mac")) 
         ? window.location.href = mailtoPC 
@@ -376,6 +376,7 @@ const ComponentToPrint = () => {
   
     return (
       <div className="buttons_container">
+        <meta name="viewport" content="width=1024"></meta>
         <FormSce ref={componentRef} />
         <button className="button_send" onClick={handlePrint}>Descargar formulario en PDF</button>
         <button className="button_attach" onClick={sendMail}>Enviar Archivos</button>
