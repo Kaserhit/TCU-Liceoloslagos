@@ -12,7 +12,7 @@
     "react-dom": "^16.13.1",
     "react-ga": "^2.7.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.1",
+    "react-scripts": "^3.4.4",
     "react-to-print": "^2.12.4"
   },
   "repository": {

@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
+
 import Image from '../elements/Image';
 
 const propTypes = {
@@ -48,17 +48,10 @@ const FeaturesSplit = ({
     alignTop && 'align-top'
   );
 
-  const sectionHeader = {
-    title: '¿Cómo Funciona la aplicación?',
-    paragraph:
-      'Para enviar tus documentos al comité encargado del SCE debes seguir los siguientes pasos:',
-  };
-
   return (
     <section {...props} className={outerClasses}>
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
           <div className={splitClasses}>
             <div className="split-item">
               <div
