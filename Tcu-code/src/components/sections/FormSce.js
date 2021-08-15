@@ -19,34 +19,37 @@ class FormSce extends React.PureComponent {
                                     width={140}
                                     height={140} />
                             </div>
+                            <div class="vl"></div> 
                             <div>
-                                <h1 className="title MEP">MINISTERIO DE EDUCACIÓN PÚBLICA</h1>
-                                <p className="subtitle MEP__subtitle">DESPACHO VICEMINISTRA ACADÉMICA DIVISION DE DESARROLLO CURRICULAR <br />
-                                Oficina de Servicio Comunal Estudiantil
-                                Programa de Gobiernos Estudiantiles
+                         
+                                <h1 className="title MEP">Dirección Regional de Heredia</h1>
+                                <p className="subtitle MEP__subtitle">Supervisión Educativa Circuito 02<br />
+                                Liceo Los Lagos
                             </p><br />
-                                <p className="subtitle MEP__subtitle--slogan">“APRENDER PARA SERVIR, SERVIR PARA APRENDER”</p>
+                                <p className="subtitle MEP__subtitle">Transformación curricular, una apuesta por la calidad educativa.</p>
                             </div>
                             <br />
                             <br />
                             <div className="logo__SCE">
                                 <Image
-                                    src={require('../../assets/images/LogoSCE.png')}
+                                    src={require('../../assets/images/LogoColegio.jpg')}
                                     alt="Open"
-                                    width={140}
-                                    height={140} />
+                                    width={100}
+                                    height={100} />
                             </div>
                         </div>
+                        <hr style={{border: "5px solid #1B8898"}}/>
                     </header>
                     <div>
                         <div className="main__container--section">
-                            <h1 className="title form__title">FORMULA O2<br />FORMULACIÓN Y EJECUCIÓN DE PROYECTOS</h1>
+                            <h1 className="title form__title">Fórmula 02-SECOES<br />FORMULACIÓN Y EJECUCIÓN DE PROYECTOS</h1>
+    
                             <br />
                             <br />
                             <div className="section__A">
                                 <h1 className="section__A--title">A- Información General</h1>
                                 <br />
-                                <p className="section__A--name">Nombre del Centro Educativo <span className="section__A--nameSpan">LICEO LOS LAGOS</span></p>
+                                <p className="section__A--name">Nombre del Centro Educativo: <span className="section__A--nameSpan">LICEO LOS LAGOS</span></p>
                                 <div className="section__A--information">
                                     <div>
                                         <p className="section__A--phone">Teléfono: <span className="section__A--phoneSpan">2260-6296</span></p>
@@ -72,24 +75,15 @@ class FormSce extends React.PureComponent {
                                     <table style={{tableLayout: "fixed"}} className=".section__A--tableTutor" border="2">
                                         <tr>
                                             <th style={{color: "black", fontSize:"12px", font: "arial", textAlign:"center"}}>Tutor(a)(s)</th>
-                                            <th style={{color: "black", fontSize:"12px", font: "arial", textAlign:"center"}}>Teléfono</th>
-                                            <th style={{color: "black", fontSize:"12px", font: "arial", textAlign:"center"}}>Fax</th>
+                                            <th style={{color: "black", fontSize:"12px", font: "arial", textAlign:"center"}}>Celular</th>
                                             <th style={{color: "black", fontSize:"12px", font: "arial", textAlign:"center"}}>Correo Electrónico</th>
                                         </tr>
                                         <tr>
                                             <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
                                             <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
                                             <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
-                                            <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
                                         </tr>
                                         <tr>
-                                            <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
-                                            <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
-                                            <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
-                                            <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
-                                        </tr>
-                                        <tr>
-                                            <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
                                             <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
                                             <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
                                             <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
@@ -98,10 +92,13 @@ class FormSce extends React.PureComponent {
                                             <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
                                             <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
                                             <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
-                                            <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
                                         </tr>
                                         <tr>
                                             <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
+                                            <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
+                                            <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
+                                        </tr>
+                                        <tr>
                                             <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
                                             <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
                                             <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
@@ -116,9 +113,9 @@ class FormSce extends React.PureComponent {
                                         <tbody>
                                             <tr>
                                                 <th style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}>Nombre Completo/<br/>Estudiantes</th>
-                                                <th style={{color: "black", fontSize:"12px", font: "arial", textAlign:"center"}}>Teléfono</th>
-                                                <th style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}>Nombre Completo/<br/>Estudiantes</th>
-                                                <th style={{color: "black", fontSize:"12px", font: "arial", textAlign:"center"}}>Teléfono</th>
+                                                <th style={{color: "black", fontSize:"12px", font: "arial", textAlign:"center"}}>Sección</th>
+                                                <th style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}>Celular</th>
+                                                <th style={{color: "black", fontSize:"12px", font: "arial", textAlign:"center"}}>Correo Electrónico</th>
                                             </tr>
                                             <tr>
                                                 <td contentEditable='true' style={{color: "black", fontSize:"11px", font: "arial", textAlign:"center"}}></td>
@@ -192,10 +189,6 @@ class FormSce extends React.PureComponent {
                                             <div className="projectType__options--institucional">
                                                 <p>Institucional: </p>
                                                 <input className="institucional"></input>
-                                            </div>
-                                            <div className="projectType__options--individual">
-                                                <p>Individual: </p>
-                                                <input className="individual"></input>
                                             </div>
                                             <div className="projectType__options--grupal ">
                                                 <p>Grupal : </p>
@@ -339,18 +332,15 @@ class FormSce extends React.PureComponent {
                                     </div>
                                 </div>
                             </div>
-                            <div className="section__C">
-                                <h3>Muchas gracias por su información</h3>
-                            </div>
                         </div>
                     </div>
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
                     <footer className="footer">
-                        <hr style={{border: "4px solid green"}}/>
-                        <p className="footer__information">Avenida Central, Calle 6, Edificio Raventós, 7to piso, 
-                        San José, Costa Rica.Telefax: 223 18 10 //  256 7011 Ext.-275/ 279 </p>
-                        <p className="footer__emails"><span className="email">sercoes@mep.go.cr</span> /  <span className="email">mvillalobos@mep.go.cr</span> / <span className="email">Lcarvajalg@mep.go.cr</span> / <span className="email">msolisd@mep.go.cr</span> / <span className="email">ghidalgo@mep.go.cr</span></p>
-                        <p className="direction">Apartado Postal  12340 – 1000 San José</p>
-                        <p className="phrase">“AL DESARROLLO POR LA EDUCACIÓN”</p>
+                        <p className="footer__information">Teléfonos:(506) 2260-6296     Heredia, Los Lagos, costado Este Iglesia Católica. </p>
+                        <p className="footer__emails"><span className="email">lic.loslagos@mep.go.cr</span></p>
                     </footer>
                 </div>
             </div>

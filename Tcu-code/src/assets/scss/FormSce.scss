@@ -27,13 +27,13 @@
         line-height: 32px;
         font-size: 20px;
         margin-top: -1px;
-        text-align: center;
+        text-align: left;
         font-family: Georgia;
     }
     .MEP__subtitle{
         font-size: 15px;
         margin-top: -25px;
-        text-align: center;
+        text-align: left;
         font-family: Georgia;
     }
     .MEP__subtitle--slogan{
@@ -44,6 +44,16 @@
         font-family: 'Times New Roman';
     }
 }
+
+.vl {
+    margin-top: 25px;
+    margin-right: 10px;
+    border-left: 3px solid black;
+    height: 85px;
+    
+  }
+
+
 
 .main__container--section {
     width: 50%;
@@ -57,6 +67,7 @@
         margin: 0 0 15px 0;
         
     }
+
     .section__A {
         .section__A--title, .section__A--name{
             font-family: Arial;
@@ -120,6 +131,7 @@
                     margin-right: 10px;
                 }
                 .project_name {
+                    margin-right: 100px;
                     height: 30px;
                     border: none;
                     width: 600px;

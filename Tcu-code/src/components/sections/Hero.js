@@ -77,7 +77,15 @@ const Hero = ({
                 <ButtonGroup>
                   <Link to="/Formulario" target="_blank">
                     <Button tag="a" color="primary" wideMobile>
-                      Reportar Servicio Comunal Estudiantil
+                      Reportar propuesta de Servicio Comunal Estudiantil
+                    </Button>
+                  </Link>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <Link to="/FormularioFinal" target="_blank">
+                    <Button tag="a" color="primary" wideMobile>
+                      Reportar finalización de Servicio Comunal Estudiantil
                     </Button>
                   </Link>
                 </ButtonGroup>

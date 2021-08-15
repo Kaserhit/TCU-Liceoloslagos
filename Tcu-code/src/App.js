@@ -4,6 +4,7 @@ import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
 import ReactGA from 'react-ga';
 import FormSce  from "./components/sections/FormSce.js";
+import FormSceFinal  from "./components/sections/FormSceFinal.js";
 
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
@@ -40,6 +41,9 @@ const App = () => {
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
           <Route path="/Formulario">
             <FormSce  />
+          </Route>
+          <Route path="/FormularioFinal">
+            <FormSceFinal  />
           </Route>
         </Switch>
       )} />
